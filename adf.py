@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
 
-from airflow.models import DAG, BaseOperator
+from airflow.models import DAG
 from airflow.providers.microsoft.azure.operators.data_factory import AzureDataFactoryRunPipelineOperator
 
 
