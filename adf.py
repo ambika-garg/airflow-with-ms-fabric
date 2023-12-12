@@ -12,14 +12,14 @@ with DAG(
     default_args={
         "retries": 1,
         "retry_delay": timedelta(minutes=3),
-        "azure_data_factory_conn_id": "<connection_id>", #This is a connection created on Airflow UI
+        "azure_data_factory_conn_id": "azure_data_factory_conn_id", #This is a connection created on Airflow UI
     },
     default_view="graph",
 ) as dag:
 
     run_adf_pipeline = AzureDataFactoryRunPipelineOperator(
         task_id="run_adf_pipeline",
-        pipeline_name="<PipelineName>", 
+        pipeline_name="pipeline1", 
         parameters={"myParam": "value"},
     )
 
