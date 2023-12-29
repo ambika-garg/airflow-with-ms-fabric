@@ -31,7 +31,7 @@ from airflow import DAG
 from airflow.operators.bash import BashOperator
 
 with DAG(
-    "create_private_package_as_requirement",
+    "create_private_package_as_requirement_copy",
     default_args={
         "depends_on_past": False,
         "email": ["airflow@example.com"],
