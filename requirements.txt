@@ -1,2 +1,1 @@
-/opt/airflow/dags/airflow_operators-0.0.0-py3-none-any.whl
-
+dags/airflow_operators-0.0.0-py3-none-any.whl
