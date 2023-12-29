@@ -1,4 +1,4 @@
-from airflow_operator.hello_operator import SampleOperator
+# from airflow_operator.hello_operator import SampleOperator
 from airflow.operators.bash import BashOperator
 from airflow import DAG
 
@@ -13,6 +13,7 @@ with DAG(
         bash_commadn = "pip list"
     )
 
-    sample_task = SampleOperator(task_id="sample-task", name="foo_bar")
+    # sample_task = SampleOperator(task_id="sample-task", name="foo_bar")
 
-    list_requirements >> sample_task
+    list_requirements
+    # >> sample_task
